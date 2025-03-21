@@ -4,16 +4,16 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #1a1a1a;  /* Darker background for a modern feel */
-    padding: 20px 20px;
+    background-color: #b2b2b2;  /* Darker background for a modern feel */
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: white;
+    color: #055b49;
     z-index: 1000;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Soft shadow */
-    border-bottom: 1px solid #444;  /* Subtle border at the bottom */
-    border-radius: 0 0 5px 5px;  /* Rounded bottom corners */
+    border-bottom: 1px solid #3c3c3c;  /* Subtle border at the bottom */
+    border-radius: 0 0 0px 0px;  /* Rounded bottom corners */
   }
   
   /* Navbar inner content */
@@ -34,12 +34,13 @@
     align-items: center;
     padding: 0 20px;
     padding-left: 70%;  /* Added padding on both sides */
-    flex-grow: 1;  /* Allows the links container to take up available space */
+    flex-grow: 1; 
+    font-size: 1.6em; /* Allows the links container to take up available space */
   }
   
   .navbar .navbar-links a {
     text-decoration: none;
-    color: #ddd;  /* Soft white text for links */
+    color: #055b49; /* Soft white text for links */
     font-size: 1.1em;
     font-weight: 500;
     transition: color 0.3s, transform 0.3s;  /* Smooth hover effects */
