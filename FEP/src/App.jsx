@@ -1,9 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from "./Components/Home"; // Import your Home component
-import TechSidebar from "./Components/TechSidebar";
-import PostPage from "./Components/PostPage"; // Import your PostPage component
-import EventsPage from "./Components/EventsPage"; // Import your EventsPage component
 import GroupsPage from "./Components/GroupsPage"; // Import your GroupsPage component
 import Header from "./Components/Header"
 
