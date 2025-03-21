@@ -1,7 +1,7 @@
 import React from "react";
-import "./About.css";
+import "./About.css"; // Import the CSS file
 
-export default function About() {
+function About() {
   const ourTeam = {
     adrianBurke: {
       name: "Adrian Burke",
@@ -9,43 +9,53 @@ export default function About() {
       github: "https://github.com/AdrianBurke1",
       image: "https://avatars.githubusercontent.com/u/114108495?v=4",
     },
+    evanRosas: {
+      name: "Evan Rosas",
+      bio: "Thrive Apprentice",
+      github: "https://github.com/evanmrosas",
+      image: "https://avatars.githubusercontent.com/u/147665124?v=4",
+    },
+
   };
 
   return (
-    <div className="about-container">
-      <div className="about">
-        <p style={{ fontSize: 20 }}>
-          <em>
-            <strong>About Me</strong>
-          </em>
-          <br />
-          <br />
-          We created a YouTube replica using React, collaborating to build a
-          functional UI. This project boosted our practical experience and
-          understanding of web dev practices in a team-based environment.
-        </p>
-        <br />
-        <h1 className="meet-the-team">Hi I'm Adrian</h1>
-        <hr />
-        <div className="developers">
-          <div className="developer">
-            <img
-              src={ourTeam.adrianBurke.image}
-              alt="Adrian Burke"
-              style={{ width: "300px" }}
-            />
-            <p>{ourTeam.adrianBurke.bio}</p>
-            <div className="button-container">
-              <button className="button">
-                <a href={ourTeam.adrianBurke.github}>Adrian's GitHub</a>
-              </button>
+      <div className="about-container">
+        <div className="about">
+          <p style={{ fontSize: 20 }}>
+          </p>
+          <h1 className="meet-the-team"> Meet The Team </h1>
+          <div className="developers">
+            {/* DEV 1  */}
+            <div className="developer">
+              <img
+                src={ourTeam.evanRosas.image}
+                alt="Evan Rosas"
+              />
+              <p>{ourTeam.evanRosas.bio}</p>
+              <div className="button-container">
+                <button className="button">
+                  <a href={ourTeam.evanRosas.github}>Evan's GitHub</a>
+                </button>
+              </div>
+            </div>
+            {/* DEV 2 */}
+            <div className="developer">
+              <img
+                src={ourTeam.adrianBurke.image}
+                alt="Adrian Burke"
+              />
+              <p>{ourTeam.adrianBurke.bio}</p>
+              <div className="button-container">
+                <button className="button">
+                  <a href={ourTeam.adrianBurke.github}>Adrian's GitHub</a>
+                </button>
+              </div>
             </div>
           </div>
         </div>
+        <div className="sidebar">{/* Sidebar content */}</div>
       </div>
-      <div className="sidebar">
-        {/* Sidebar content */}
-      </div>
-    </div>
   );
 }
+
+export default About;
