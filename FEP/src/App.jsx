@@ -1,20 +1,14 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from "./Components/Home"; // Import your Home component
-import GroupsPage from "./Components/GroupsPage"; // Import your GroupsPage component
-import Header from "./Components/Header"
+import Navbar from "./Components/Navbar"
 
 function App() {
   return (
     <Router>
       <div className="app">
-        <Header />
-        <Home />
+        <Navbar />
         <Routes>
-          <Route exact path="/" component={Home} />
-          <Route path="/post" component={PostPage} />
-          <Route path="/events" component={EventsPage} />
-          <Route path="/groups" component={GroupsPage} />
+         
         </Routes>
       </div>
     </Router>

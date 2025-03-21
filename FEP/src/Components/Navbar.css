@@ -1,0 +1,61 @@
+/* Navbar container */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1a1a1a;  /* Darker background for a modern feel */
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Soft shadow */
+    border-bottom: 1px solid #444;  /* Subtle border at the bottom */
+    border-radius: 0 0 5px 5px;  /* Rounded bottom corners */
+  }
+  
+  /* Navbar inner content */
+  .navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;  /* Ensure full width of navbar */
+  }
+  
+  /* Navbar Links */
+  .navbar .navbar-links {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    padding-left: 70%;  /* Added padding on both sides */
+    flex-grow: 1;  /* Allows the links container to take up available space */
+  }
+  
+  .navbar .navbar-links a {
+    text-decoration: none;
+    color: #ddd;  /* Soft white text for links */
+    font-size: 1.1em;
+    font-weight: 500;
+    transition: color 0.3s, transform 0.3s;  /* Smooth hover effects */
+  }
+  
+  .navbar .navbar-links a:hover {
+    color: #1e90ff;  /* Blue color on hover */
+    transform: scale(1.1);  /* Slight zoom effect */
+  }
+  
+  /* Optional: Navbar logo (h1) styling */
+  .navbar h1 {
+    font-size: 1.6em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  
