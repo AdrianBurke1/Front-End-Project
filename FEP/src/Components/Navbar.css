@@ -32,10 +32,31 @@
     gap: 20px;
     justify-content: center;
     align-items: center;
-    padding: 0 20px;
-    padding-left: 70%;  /* Added padding on both sides */
+    padding: 0 22px;
+    padding-left: 67%;  /* Added padding on both sides */
     flex-grow: 1; 
     font-size: 1.6em; /* Allows the links container to take up available space */
+  }
+
+  .navbar .welcome  {
+    text-decoration: none;
+    color: #055b49; /* Soft white text for links */
+    font-size: 23px;
+    font-weight: 500;
+    transition: color 0.3s, transform 0.3s;  /* Smooth hover effects */
+  }
+
+  .navbar .welcome a {
+    text-decoration: none;
+    color: #055b49; /* Soft white text for links */
+    font-size: 1.1em;
+    font-weight: 500;
+    transition: color 0.3s, transform 0.3s;  /* Smooth hover effects */
+  }
+
+  .navbar .welcome:hover {
+    color: #1e90ff;  /* Blue color on hover */
+    transform: scale(1.1);  /* Slight zoom effect */
   }
   
   .navbar .navbar-links a {
