@@ -15,8 +15,9 @@ body {
     align-items: center;
     width: 100%; /* Adjust the width as needed */
     height: auto;
-    padding-top: 10rem;
+    padding-top: 5.5rem;
     padding-left: 130%;
+    padding-bottom: 1rem;
     box-sizing: border-box; /* Include padding and border in the total width */
     justify-content: center;
   }
