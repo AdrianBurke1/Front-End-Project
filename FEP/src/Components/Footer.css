@@ -1,0 +1,28 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  body {
+    padding-bottom: 50px;
+  }
+  
+  .content {
+    flex: 1; /* Pushes footer to the bottom when content is small */
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+    letter-spacing: 2px; /* Increases spacing between letters */
+    word-spacing: 5px; /* Increases spacing between words */
+    font-size: 1rem; /* Adjust size as needed */
+    width: 285%;
+    position: relative;
+  }
