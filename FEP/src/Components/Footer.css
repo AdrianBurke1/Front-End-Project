@@ -22,7 +22,9 @@
     color: white;
     letter-spacing: 2px; /* Increases spacing between letters */
     word-spacing: 5px; /* Increases spacing between words */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
     font-size: 1rem; /* Adjust size as needed */
-    width: 285%;
-    position: relative;
   }
