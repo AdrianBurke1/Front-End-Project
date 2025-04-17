@@ -4,6 +4,7 @@ import Home from './views/Home';
 import About from './views/About';
 import Adopt from './views/Adopt';
 import Form from "./views/Form";
+import Test from "./Views/Test";
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 
@@ -34,6 +35,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/adopt" element={<Adopt />} />
           <Route path="/form" element={<Form />} />
+          <Route path="/test" element={<Test />}/>
         </Routes>
       </BrowserRouter>
   </ThemeProvider>
